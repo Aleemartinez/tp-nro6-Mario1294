@@ -10,22 +10,17 @@ namespace Ejercicio_1
     {
         static void Main(string[] args)
         {
-            int num = 501;
+            Console.WriteLine("Ingrese un numero:");
+            int num = Int32.Parse(Console.ReadLine());
             int aux;
-        while(num > 0)
-           {
-               if(num < 1000)
-               {
-                   aux = num % 10;
-                   num = num / 10;
-               }
-               if(num < 1000)
-               {
-                   aux = num % 100;
-                   num = num / 100;
-               }   
-                          
-           }
-                  
+            Console.WriteLine("Nuemero Ivertido: ");
+            while (num > 0)
+            {
+                aux = num % 10;
+                num = num / 10;
+                Console.Write(value: aux);
+            }
+            Console.ReadKey();
+        }
     }
 }
