@@ -19,24 +19,24 @@ namespace Ejercicio_2
                 int num1 = Int32.Parse(Console.ReadLine());
                 Console.Write("Ingrese numero 2: ");
                 int num2 = Int32.Parse(Console.ReadLine());
-
+                int resultado;
                 switch (operacion)
                 {
                     case 1:
-                        int suma = num1 + num2;
-                        Console.Write(value: num1 + " + " + num2 + " = " + suma);
+                        resultado = num1 + num2;
+                        Console.Write(value: num1 + " + " + num2 + " = " + resultado);
                         break;
                     case 2:
-                        int resta = num1 - num2;
-                        Console.Write(value: num1 + " - " + num2 + " = " + resta);
+                        resultado = num1 - num2;
+                        Console.Write(value: num1 + " - " + num2 + " = " + resultado);
                         break;
                     case 3:
-                        int mult = num1 * num2;
-                        Console.Write(value: num1 + " x " + num2 + " = " + mult);
+                        resultado = num1 * num2;
+                        Console.Write(value: num1 + " x " + num2 + " = " + resultado);
                         break;
                     case 4:
-                        float div = num1 / num2;
-                        Console.Write(value: num1 + " / " + num2 + " = " + div);
+                        resultado = num1 / num2;
+                        Console.Write(value: num1 + " / " + num2 + " = " + resultado);
                         break;
                 }
                 Console.Write("\nHacer Otra operacion: \n1)Si \n2)No\n");
